@@ -3,3 +3,13 @@
 .homeSearch{background:var(--purple);padding:8px 18px 18px}.homeSearch .search{height:46px;border-radius:23px;padding:0 15px;font-size:16px}.homeSearch .search svg{width:23px;height:23px}.quick{padding:16px 20px 10px;gap:14px}.quick button{aspect-ratio:1/1;max-height:132px;border-radius:20px;gap:8px}.quick svg{width:30px;height:30px}.quick b{font-size:14px}.homeChevron{width:100%;height:48px;color:var(--p2);font-size:38px;line-height:1;display:grid;place-items:center}.homeChevron span{transform:translateY(-6px)}.summary{margin-top:2px}.summary h2{font-size:21px;margin:0 0 14px}.summary span{font-size:14px}.summary b{font-size:22px}
 @media(max-width:520px){header{height:calc(60px + env(safe-area-inset-top));padding-left:14px;padding-right:14px}.brand{font-size:19px}.homeSearch{padding:6px 16px 14px}.quick{padding:14px 16px 8px;gap:12px}.quick button{border-radius:18px}.summary{margin-left:16px;margin-right:16px}}
 @media(min-width:850px){.homeSearch{padding:24px 42px 18px}.homeSearch .search{max-width:680px}.homeChevron{display:none}}
+
+/* Correção iOS: sem blur/filtro e navegação compacta */
+header,.title,.homeSearch{filter:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:#3b007b!important}
+header{position:relative!important;top:auto!important}
+main{overflow:visible}
+.title{min-height:56px;padding-top:8px;padding-bottom:8px}
+.empty{min-height:calc(100dvh - 190px);padding-top:10px;padding-bottom:100px}
+.homeSearch{padding-top:4px!important}
+.imagePicker{margin-top:0!important}.imagePicker>span{display:block;margin-bottom:10px}.imageBox{width:100%;height:190px;border:1.5px dashed #c9c9d2;border-radius:16px;background:#f7f7f9;display:grid;place-items:center;overflow:hidden}.imageBox svg{width:44px;height:44px;color:#a9a9b4}.imageBox img{width:100%;height:100%;object-fit:contain;background:#fff}.imageUpload{display:block!important;text-align:center;background:#f1ebf8;color:var(--purple);padding:12px;border-radius:12px;font-weight:700!important}.imageUpload input{display:none!important}
+@media(max-width:520px){.empty{min-height:calc(100dvh - 178px)}.title h1{font-size:22px}.homeSearch .search{height:44px}.quick{padding-top:12px}}
